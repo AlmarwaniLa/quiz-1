@@ -1,0 +1,43 @@
+{
+    "name": "quiz1",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "db:create": "createdb --echo clucks",
+        "db:drop": "dropdb --if-exists --echo clucks",
+        "db:migrate": "knex migrate:latest",
+        "db:rollback": "knex migrate:rollback",
+        "db:reset": "npm run db:drop && npm run db:migrate",
+        "knex": "knex"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AlmarwaniLa/quiz-1.git"
+    },
+    "keywords": [],
+    "author": "layla",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AlmarwaniLa/quiz-1/issues"
+    },
+    "homepage": "https://github.com/AlmarwaniLa/quiz-1#readme",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "connect": "^3.7.0",
+        "cookie-parser": "^1.4.5",
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "knex": "^0.21.17",
+        "method-override": "^3.0.0",
+        "moment": "^2.29.1",
+        "morgan": "^1.10.0",
+        "multer": "^1.4.2",
+        "serve-static": "^1.14.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    },
+    "description": ""
+}
